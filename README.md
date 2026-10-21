@@ -18,33 +18,19 @@ The team modeled:
 3. the expected loss associated with each outcome; and
 4. the revenue impact of charging contingently refundable premiums.
 
-## Results from the submitted analysis
-
-| Outcome | Baseline | With strategy | Change |
-|---|---:|---:|---:|
-| Loss from free upgrades | €637,988 | €170,090 | −73.34% |
-| Loss from last-minute cancellations | €1,190,536 | €279,872 | −76.49% |
-| Potential revenue, upgrade strategy | €26,083,973 | €26,551,871 | +1.79% |
-| Potential revenue, cancellation strategy | €26,083,973 | €26,994,636 | +3.49% |
-| Potential revenue, both strategies | €26,083,973 | €27,462,534 | **+5.28%** |
-
-The original report also recorded one-sided hypothesis tests for all five
-comparisons. The exact values are available in
-[`results/project_summary.csv`](results/project_summary.csv).
-
-![Weekly revenue decomposition](assets/figures/revenue_decomposition.png)
-
 ## Repository structure
 
 ```text
 hotel-revenue-analytics/
 ├── src/hotel_revenue_analytics.py     # cleaned, reusable analysis functions
 ├── notebooks/                         # original workflow, outputs stripped
-├── assets/figures/                    # selected figures from the submission
-├── results/project_summary.csv        # reported business outcomes
-├── report/                            # two-page programming supplement
+├── requirements.txt                   # reproducible Python environment
+├── README.md                          # project and method documentation
 └── AUTHORS.md                         # transparent team attribution
 ```
+
+The repository intentionally contains source code only: competition data,
+generated figures, model outputs, and application-report files are excluded.
 
 ## Methods demonstrated
 
