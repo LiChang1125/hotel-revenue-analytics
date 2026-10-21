@@ -1,0 +1,6 @@
+metric,baseline_eur,strategy_eur,change_pct,p_value
+Upgrade loss,637988.09,170090.20,-73.34,8.39e-287
+Last-minute cancellation loss,1190535.95,279872.46,-76.49,9.04e-267
+Potential revenue — upgrade strategy,26083972.70,26551870.59,1.79,3.04e-06
+Potential revenue — cancellation strategy,26083972.70,26994636.20,3.49,1.30e-18
+Potential revenue — combined strategies,26083972.70,27462534.08,5.28,1.00e-40

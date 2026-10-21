@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+
+# Competition data and generated model artifacts are intentionally excluded.
+data/
+*.xlsx
+*.xls
+*.csv
+!results/project_summary.csv
+*.pkl
+*.joblib
