@@ -5,11 +5,9 @@ __pycache__/
 venv/
 .DS_Store
 
-# Competition data and generated model artifacts are intentionally excluded.
-data/
-*.xlsx
-*.xls
-*.csv
+# Local/private data and generated model binaries remain excluded.
+data/private/
+*.zip
 *.pkl
 *.joblib
 
