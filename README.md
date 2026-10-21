@@ -23,14 +23,23 @@ The team modeled:
 ```text
 hotel-revenue-analytics/
 ├── src/hotel_revenue_analytics.py     # cleaned, reusable analysis functions
-├── notebooks/                         # original workflow, outputs stripped
+├── notebooks/                         # compact and original executed notebooks
+│   └── original_with_outputs/         # original project notebooks and outputs
+├── data/
+│   ├── preparation/                   # source and cleaned booking data
+│   └── analysis/                      # ADR and loss-matrix inputs
+├── outputs/
+│   ├── upgrade/                       # upgrade model, probabilities, and figures
+│   ├── cancellation/                  # cancellation model, probabilities, and figures
+│   └── revenue/                       # revenue visualizations
 ├── requirements.txt                   # reproducible Python environment
 ├── README.md                          # project and method documentation
 └── AUTHORS.md                         # transparent team attribution
 ```
 
-The repository intentionally contains source code only: competition data,
-generated figures, model outputs, and application-report files are excluded.
+The six original project bundles—Data Preparation, Data Analysis, Python,
+Upgrade, Cancel, and Revenue—are preserved in the folders above. Application
+documents remain outside this repository.
 
 ## Methods demonstrated
 
@@ -53,9 +62,11 @@ python -m pip install -r requirements.txt
 jupyter lab
 ```
 
-Place the competition files in a local `data/` directory and update notebook
-paths accordingly. The original dataset and large intermediate spreadsheets are
-not redistributed here; `data/` is excluded from version control.
+The original competition files are available under `data/`. The notebooks in
+`notebooks/original_with_outputs/` preserve the executed project workflow;
+the smaller notebooks directly under `notebooks/` have outputs removed for
+faster browsing. Some original notebook paths may need to be changed to the
+repository-relative locations shown above before re-running the full analysis.
 
 ## Important limitations
 
