@@ -10,6 +10,10 @@ data/
 *.xlsx
 *.xls
 *.csv
-!results/project_summary.csv
 *.pkl
 *.joblib
+
+# Generated analysis and application artifacts stay outside the code repository.
+assets/
+results/
+report/
